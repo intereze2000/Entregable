@@ -1,124 +1,76 @@
-/* ------------------------------------------- */
-/* 1. Estilos del Contenedor Principal (NAV) */
-/* ------------------------------------------- */
-
 .main-nav {
-    background-color: #343a40; /* Color de fondo oscuro */
-    padding: 0 20px; /* Espacio a los lados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-    height: 60px; /* Altura fija para la barra */
-    display: flex; /* Habilita Flexbox */
-    align-items: center; /* Centra verticalmente los elementos (ul) */
+    background-color: #343a40; 
+    padding: 0 20px; 
+    height: 60px; 
+    display: flex; 
+    align-items: center; 
 }
-
-/* ------------------------------------------- */
-/* 2. Estilos de la Lista de Enlaces (UL) */
-/* ------------------------------------------- */
 
 .nav-links {
-    list-style: none; /* Quita las viñetas */
+    list-style: none; 
     margin: 0;
     padding: 0;
-    width: 100%; /* Ocupa todo el ancho disponible en el nav */
-    display: flex; /* Habilita Flexbox para los <li> */
-    /* Distribuye el espacio entre el contenido (Home/Dulce/Salado) y el Carrito */
+    width: 100%; 
+    display: flex; 
     justify-content: space-between; 
-    align-items: center; /* Centra verticalmente los enlaces */
+    align-items: center; 
 }
 
-/* ------------------------------------------- */
-/* 3. Estilos de los Ítems de la Lista (LI) */
-/* ------------------------------------------- */
-
-/* Para alinear 'Home', 'Dulce', 'Salado' a la izquierda como un grupo */
-.nav-links li:not(.nav-cart) {
-    margin-right: 20px; /* Espacio entre los primeros tres enlaces */
-}
-.nav-links li:not(:last-child) {
-    margin-right: 20px; /* Espacio entre los primeros tres enlaces */
-}
-
-/* Opcional: Para mantener el 'Carrito' al extremo derecho */
-/* Nota: 'space-between' en el UL ya hace gran parte del trabajo, pero esta 
-   clase te da control extra si fuera necesario. */
 .nav-cart {
-    /* Contenedor relativo para que el badge (position:absolute) se posicione respecto al li */
     position: relative;
     border-radius: 4px;
 }
 
-
-/* ------------------------------------------- */
-/* 4. Estilos de los Enlaces (Link) */
-/* ------------------------------------------- */
-
 .nav-links Link {
-    text-decoration: none; /* Quita el subrayado */
-    color: #ffffff; /* Color de texto blanco */
+    text-decoration: none; 
+    color: #ffffff; 
     font-size: 1.1em;
     font-weight: 500;
-    padding: 10px 15px; /* Relleno para hacer la zona de click más grande */
-    display: block; /* Ocupa todo el padding */
+    padding: 10px 15px; 
+    display: block; 
     transition: background-color 0.3s, color 0.3s;
     border-radius: 4px;
 }
 
-/* Efecto al pasar el ratón (Hover) */
 .nav-links Link:hover {
-    background-color: #495057; /* Fondo ligeramente más claro */
+    background-color: #495057; 
     color: #ffffff;
 }
 
-/* Estilo para el enlace activo (si lo implementas con JS/React) */
-.nav-links Link.active {
-    background-color: #007bff; /* Color primario para el activo */
-    color: #ffffff;
-}
 .nav-links a {
-    text-decoration: none; /* Quita el subrayado */
-    color: #ffffff; /* Color de texto blanco */
+    text-decoration: none; 
+    color: #ffffff; 
     font-size: 1.1em;
     font-weight: 500;
-    padding: 10px 15px; /* Relleno para hacer la zona de click más grande */
-    display: block; /* Ocupa todo el padding */
+    padding: 10px 15px; 
+    display: block; 
     transition: background-color 0.3s, color 0.3s;
     border-radius: 4px;
 }
 
-/* Efecto al pasar el ratón (Hover) */
 .nav-links a:hover {
-    background-color: #495057; /* Fondo ligeramente más claro */
-    color: #ffffff;
-}
-
-/* Estilo para el enlace activo (si lo implementas con JS/React) */
-.nav-links a.active {
-    background-color: #007bff; /* Color primario para el activo */
+    background-color: #495057; 
     color: #ffffff;
 }
 
 .cart-count {
-    /* Forma y Contenido */
     display: inline-block;
-    min-width: 18px; /* Ancho mínimo para números de un dígito */
+    min-width: 18px; 
     height: 18px;
-    line-height: 18px; /* Centra el texto verticalmente */
-    
-    /* Colores */
-    background-color: #dc3545; /* Rojo de "Alerta" */
+    line-height: 18px; 
+
+    background-color: #dc3545; 
     color: white;
     
-    /* Tipografía */
-    font-size: 0.75em; /* Fuente pequeña */
+    font-size: 0.75em; 
     font-weight: bold;
     text-align: center;
-    border-radius: 50%; /* Lo hace circular */
+    border-radius: 50%; 
 
-    /* Posicionamiento Absoluto */
     position: absolute;
     top: -6px;      /* Desplazamiento hacia arriba (fuera del borde superior) */
     right: -8px;   /* Desplazamiento hacia la derecha (fuera del borde derecho) */
     
-    /* Opcional: Asegura que siempre esté por encima de otros elementos */
+    /*Asegura que siempre esté por encima de otros elementos */
     z-index: 10;
 }

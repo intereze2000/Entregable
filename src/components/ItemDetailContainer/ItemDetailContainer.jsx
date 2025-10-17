@@ -7,20 +7,15 @@ export const ItemDetailContainer = () => {
     const [detail, setDetail] = useState({});
     const {id} = useParams();
 
-    useEffect(() => {
-        console.log("Fetching product details for id:", id);
-        // Use absolute path to public assets so fetch works from any route
+    useEffect(() => {        
         fetch('/data/products.json')
-        .then((res) => {
-            console.log("Fetch response:", res.statusText);
-            if (!res.ok) {
-                console.log("Error al obtener los productos");
+        .then((res) => {            
+            if (!res.ok) {                
                 throw new Error("Error al obtener los productos");
             }
             return res.json();
         })
-        .then((data) => {               
-            console.log("entro en data:", id);
+        .then((data) => {                           
             const found = data.find(prod => prod.id === id) 
             
             if (found) {            

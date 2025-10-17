@@ -16,7 +16,7 @@ export const CartProvider = ({children}) => {
         }
         
         setCart([...cart, item]);
-        alert (`${item.name} agregado al carrito`)
+        alert (`${item.nombre} agregado al carrito`)
     };
 
     

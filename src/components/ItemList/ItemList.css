@@ -1,55 +1,28 @@
-/* ------------------------------------------- */
-/* ESTILOS PARA LA LISTA DE PRODUCTOS */
-/* ------------------------------------------- */
-
 .item-list {
-    /* 1. Habilita Flexbox */
     display: flex;
-
-    /* 2. Permite que los items se envuelvan a la siguiente línea si no caben */
     flex-wrap: wrap;
-
-    /* 3. Centra los grupos de productos horizontalmente en el contenedor */
     justify-content: center;
-
-    /* 4. Alinea los items verticalmente (útil si hay espacio extra) */
     align-items: flex-start;
 
-    /* 5. Estilos de presentación del contenedor */
-    padding: 20px 10px; /* Espacio interno */
-    margin: 0 auto; /* Centra el contenedor completo en la página */
-    max-width: 1200px; /* Ancho máximo para mantener el diseño ordenado */
-    background-color: #f4f4f4; /* Un fondo sutil para toda la lista */
+    padding: 20px 10px; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+    background-color: #f4f4f4; 
     border-radius: 10px;
 }
 
-/* ------------------------------------------- */
-/* AJUSTES PARA LOS ITEMS DENTRO DE LA LISTA */
-/* (Asegúrate de que este CSS se combine con el CSS del .product-item individual) */
-/* ------------------------------------------- */
-
-/* Sobrescribe el margin del item individual para el layout flex */
 .product-list-container .product-item {
-    /* El ancho de 280px del .product-item ya funciona bien. 
-       Aquí ajustamos solo los márgenes para crear el espaciado entre las tarjetas. */
     margin: 15px; 
 }
 
-/* ------------------------------------------- */
-/* RESPONSIVIDAD BÁSICA (Añadido) */
-/* ------------------------------------------- */
-
-/* Para pantallas más pequeñas (móviles) */
 @media (max-width: 600px) {
     .product-list-container {
-        /* Permite que los items usen más espacio para ser más grandes y legibles */
         padding: 10px 5px;
     }
     
-    /* Hace que cada item ocupe casi todo el ancho de la pantalla */
     .product-list-container .product-item {
         width: 90%; 
         max-width: 350px;
-        margin: 10px auto; /* Centra el item en el modo móvil */
+        margin: 10px auto; 
     }
 }
