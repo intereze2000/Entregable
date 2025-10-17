@@ -1,0 +1,42 @@
+[
+  {
+    "id":"1",
+    "nombre": "Croissant de Mantequilla",
+    "descripcion": "Clásico croissant francés, hojaldrado y con un rico sabor a mantequilla. Perfecto para el desayuno.",
+    "tipo": "Dulce",
+    "precio": 2500.00,
+    "imagen": "/images/Croissant.png"
+  },
+  {
+    "id":"2",
+    "nombre": "Pan de Queso y Orégano",
+    "descripcion": "Pan suave y esponjoso, horneado con trozos de queso y un toque aromático de orégano.",
+    "tipo": "Salado",
+    "precio": 3000.00,
+    "imagen": "/images/QuesoyOregano.png"
+  },
+  {
+    "id":"3",
+    "nombre": "Trenza de Chocolate y Avellanas",
+    "descripcion": "Masa trenzada rellena de una deliciosa crema de chocolate y trozos crujientes de avellana.",
+    "tipo": "Dulce",
+    "precio": 4500.00,
+    "imagen": "/images/Trenza.png"
+  },
+  {
+    "id":"4",
+    "nombre": "Focaccia de Aceitunas y Romero",
+    "descripcion": "Focaccia italiana tradicional, con un toque de aceite de oliva, aceitunas negras y hojas frescas de romero.",
+    "tipo": "Salado",
+    "precio": 3500.00,
+    "imagen": "/images/Focaccia.png"
+  },
+  {
+    "id":"5",
+    "nombre": "Magdalena de Limón y Amapola",
+    "descripcion": "Esponjosa magdalena con ralladura de limón y semillas de amapola, cubierta con un ligero glaseado.",
+    "tipo": "Dulce",
+    "precio": 2000.00,
+    "imagen": "/images/Magdalena.png"
+  }
+]

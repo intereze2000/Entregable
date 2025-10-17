@@ -1,0 +1,30 @@
+.btn-primary {
+    display: inline-block; /* Permite ancho automático basado en el contenido */
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+
+    /* Colores y forma */
+    background-color: #007bff; /* Azul primario */
+    color: #ffffff; /* Texto blanco */
+    border: 2px solid #007bff; /* Borde sólido del mismo color */
+    border-radius: 6px; /* Esquinas ligeramente redondeadas */
+
+    /* Transición para efectos suaves */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.btn-primary:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    border-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Sombra ligera */
+}
+
+/* Efecto al hacer click (Active/Focus) */
+.btn-primary:active {
+    transform: translateY(1px); /* Efecto de "presionado" */
+    box-shadow: none;
+}

@@ -1,0 +1,64 @@
+/* Estilos para el contenedor principal del producto */
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    display: flex; /* Añadido: Para organizar mejor los elementos internos */
+    flex-direction: column; /* Añadido: Apila los elementos verticalmente */
+    justify-content: space-between; /* Añadido: Distribuye el espacio entre los elementos */
+    align-items: center; /* Añadido: Centra los elementos horizontalmente */
+}
+
+/* Efecto al pasar el ratón (hover) */
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la imagen del producto (ACTUALIZADO) */
+.product-item img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible en su contenedor */
+    max-width: 250px; /* Tamaño máximo para la imagen dentro de la tarjeta */
+    height: 180px; /* Altura fija para todas las imágenes */
+    object-fit: contain; /* IMPORTANTE: Asegura que la imagen se ajuste al tamaño sin recortarse ni distorsionarse */
+    background-color: #f9f9f9; /* Un fondo claro para las imágenes transparentes */
+    border: 1px solid #eee; /* Borde sutil alrededor de la imagen */
+    border-radius: 6px;
+    margin-bottom: 15px; /* Más espacio debajo de la imagen */
+    padding: 5px; /* Espacio interno para que la imagen no toque el borde */
+}
+
+/* Estilos para el título (nombre del producto) */
+.product-title {
+    font-size: 1.4em;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.2; /* Mejora la legibilidad si el título es largo */
+}
+
+/* Estilos para la descripción del producto */
+.product-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+    min-height: 40px; /* Cambiado a min-height para permitir que crezca si es necesario */
+    max-height: 60px; /* Altura máxima para la descripción */
+    overflow: hidden; /* Oculta el texto extra si no cabe */
+    display: -webkit-box; /* Para multiline ellipsis en navegadores webkit */
+
+}
+
+/* Estilos para el precio */
+.product-precio {
+    font-size: 1.3em; /* Ligeramente más grande */
+    font-weight: bold;
+    color: #007bff;
+    margin-top: auto; /* Empuja el precio hacia abajo si hay espacio, manteniendo el contenido superior alineado */
+    margin-bottom: 10px;
+}
