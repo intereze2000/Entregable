@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import { ItemList } from '../ItemList/ItemList'
-export const ItemListContainer = () => {
+import { getProducts } from '../../services/products';
+export const ItemListContainer = ({titulo}) => {
 
     const [products, setProducts] = useState([]);
+    const { categoryId } = useParams();
 
     useEffect(() => {
-        fetch('data/products.json')
+        /*
+        fetch('/data/products.json')
         .then(res => {
             if (!res.ok) {
                 throw new Error("Error al obtener los productos");
@@ -17,15 +21,17 @@ export const ItemListContainer = () => {
         })
         .catch((err)=>{
             console.log(err)
-        })
-    }, [])
+        })*/
 
-    return (
-        <>
-        <section>
-            <h1>Bienvenido</h1>
+        getProducts(categoryId)
+        .then((data) => setProducts(data))
+        .catch((err) => console.log(err));
+        }, [categoryId])
+
+    return (        
+        <section className="container">
+            <h1>{titulo}</h1>
             <ItemList list={products} />
-        </section>
-        </>
+        </section>        
     )
 }

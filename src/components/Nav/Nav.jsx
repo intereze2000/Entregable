@@ -11,14 +11,16 @@ export const Nav = () => {
                     <Link to={"/"}>Home</Link>
                 </li>
                 <li>
-                    <Link to={"/category/dulce"}>Dulce</Link>
+                    <Link to={"/categoria/Gold"}>Oro</Link>
                 </li>
                 <li>
-                    <Link to={"/category/salado"}>Salado</Link>
+                    <Link to={"/categoria/Bamboo"}>Bamboo</Link>
                 </li>
-                {/* Put the class on the <li> so positioning for the badge works */}
+                <li>
+                    <Link to={"/categoria/Plata"}>Plata</Link>
+                </li>
                 <li className="nav-cart">
-                    <Link to={"/cart"}>Carrito</Link>
+                    <Link to={"/carrito"}>Carrito</Link>
                     {getTotalItems() > 0 && (
                       <span className="cart-count">{getTotalItems()}</span>
                       )}

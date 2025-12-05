@@ -1,0 +1,53 @@
+/* Simple cart layout to display Item cards and actions */
+.cart-page {
+  padding: 16px;
+}
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 12px;
+  align-items: start;
+  border: 1px solid #e6e6e6;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.cart-item-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: auto;
+  align-items: flex-end;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-remove,
+.btn-clear {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-clear {
+  background: #007bff;
+}
+
+.cart-empty {
+  padding: 24px;
+  text-align: center;
+}
