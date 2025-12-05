@@ -8,8 +8,8 @@ import { Footer } from './components/Footer/Footer'
 import { ProductFormContainer } from './components/adminComponents/ProductFormContainer/ProductFormContainer'
 import { RutaProtegida } from './components/RutaProtegida/RutaProtegida'
 import {Login} from './components/Login/Login'
-import { MainLayout } from './layouts/Mainlayout'
-import { AdminLayout } from './layouts/Adminlayout'
+import { MainLayout } from './layouts/MainLayout'
+import { AdminLayout } from './layouts/AdminLayout'
 
 function App() {
   return (
